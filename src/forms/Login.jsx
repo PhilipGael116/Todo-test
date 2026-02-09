@@ -2,39 +2,52 @@ import { useState } from "react"
 
 const Login = () => {
 
-    const formData = useState({
+    const [formData, setFormData] = useState({
         email: '',
         password: ''
     });
 
-    const handleChange = () => {
-
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
     }
 
-    const handleSubmit = (e) =>{
-        
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setFormData({
+            email: "",
+            password: "",
+        })
+        console.log("Form submitted: ", formData);
     }
 
-  return (
-    <form action="">
-        <label htmlFor="email">
-            Email:
-            <input 
-                type="text" 
-                value={formData.email}
-                onChange={handleChange}
-            />
-        </label>
-        <label htmlFor="password">
-            Password:
-            <input 
-                type="password" 
-            />
-        </label>
+    return (
+        <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+            <label htmlFor="email">
+                Email:
+                <input
+                    type="text"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                />
+            </label>
+            <label htmlFor="password">
+                Password:
+                <input
+                    type="password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                />
+            </label>
 
-        <button type="submit">Sign In</button>
-    </form>
-  )
+            <button type="submit">Sign In</button>
+        </form>
+    )
 }
 
 export default Login
