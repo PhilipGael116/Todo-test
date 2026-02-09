@@ -1,14 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "./forms/Login";
 import Register from "./forms/Register";
+import AuthLayout from "./layouts/AuthLayout";
 
 const App = () => {
   return (
     <>
-      <div className="bg-amber-900 text-white">Hello</div>
       <Routes>
-        <Route index element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route element={<AuthLayout />}>
+          <Route index element={<Register />} />
+          <Route path="/login" element={<Login />} />
+        </Route>
       </Routes>
     </>
   )
