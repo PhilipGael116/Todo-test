@@ -1,5 +1,4 @@
-import Header from "../components/Header";
-import Tabs from "../components/Tabs";
+import { Header, Tabs } from "../components";
 import { useEffect, useState } from "react";
 import { Plus, Rocket, MoreHorizontal, Check, Mic, Calendar, Award } from 'lucide-react';
 
