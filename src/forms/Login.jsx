@@ -48,7 +48,7 @@ const Login = () => {
                             value={formData.email}
                             onChange={handleChange}
                             className="px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2b8cee] focus:border-transparent transition-all"
-                            placeholder="john.doe@example.com"
+                            placeholder="philippe@example.com"
                             required
                         />
                     </div>
