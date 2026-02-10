@@ -88,6 +88,8 @@ const Login = () => {
                         </p>
                     </div>
                 </form>
+
+                <Link to="/home" className="text-amber-500" >Go to Home</Link>
             </div>
         </div>
     )
