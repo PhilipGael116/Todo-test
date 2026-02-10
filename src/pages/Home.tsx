@@ -24,23 +24,23 @@ const Home = () => {
         <div>
             <Header />
 
-            <main className="max-w-7xl mx-auto w-full px-6 py-10">
+            <main className="max-w-7xl mx-auto w-full px-6 xl:px-30 max-h-screen py-4">
                 <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div>
-                        <p className="text-primary font-bold tracking-widest text-xs uppercase mb-1">Thursday, Oct 24</p>
+                        <p className="text-[#2b8cee] font-bold tracking-widest text-xs uppercase mb-1">Thursday, Oct 24</p>
                         <h1 className="text-slate-900 text-4xl font-black tracking-tight">Ready to focus, Alex?</h1>
                     </div>
                     <div className="flex gap-2">
-                        <button className="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 transition-all">
+                        <button className="bg-[#2b8cee] hover:bg-[#2b8cee]/90 text-white px-5 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 transition-all">
                             <span className="material-symbols-outlined text-lg">add</span>
                             New Task
                         </button>
                     </div>
                 </div>
 
-                <div className="grid xl:grid-cols-4 xl:grid-rows-2 xl:gap-6 lg:grid-cols-2 md:grid-cols-1">
+                <div className="grid xl:grid-cols-4 xl:grid-rows-2 xl:gap-6 lg:grid-cols-4 lg:gap-5 lg:grid-rows-2 md:grid-cols-1 md:gap-5 gap-4">
 
-                    <div className="col-span-1 md:col-span-2 row-span-2 bg-primary rounded-2xl p-8 text-white relative overflow-hidden group shadow-2xl shadow-primary/30">
+                    <div className="col-span-1 md:col-span-2 row-span-2 bg-primary rounded-2xl p-8 text-white relative overflow-hidden group shadow-2xl shadow-primary/30 bg-[#2b8cee]">
                         <div className="absolute -right-10 -bottom-10 opacity-10 group-hover:scale-110 transition-transform duration-700">
                             <span className="material-symbols-outlined text-[240px]">rocket_launch</span>
                         </div>
@@ -57,7 +57,7 @@ const Home = () => {
                                     <div className="size-10 rounded-full border-2 border-primary bg-slate-300 overflow-hidden" data-alt="Teammate avatar"></div>
                                     <div className="size-10 rounded-full border-2 border-primary bg-slate-400 flex items-center justify-center text-xs font-bold">+2</div>
                                 </div>
-                                <button className="bg-white text-primary hover:bg-slate-100 px-6 py-3 rounded-xl font-extrabold transition-all">
+                                <button className="bg-white text-[#2b8cee] hover:bg-slate-100 px-6 py-3 rounded-xl font-extrabold transition-all">
                                     Complete Task
                                 </button>
                             </div>
@@ -69,7 +69,7 @@ const Home = () => {
                         <div className="relative size-32 flex items-center justify-center mb-4">
                             <svg className="size-full -rotate-90">
                                 <circle className="text-slate-100" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-width="8"></circle>
-                                <circle className="text-accent-mint" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-dasharray="364" stroke-dashoffset="91" stroke-width="8"></circle>
+                                <circle className="text-green-500/80" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-dasharray="364" stroke-dashoffset="91" stroke-width="8"></circle>
                             </svg>
                             <div className="absolute inset-0 flex flex-col items-center justify-center">
                                 <span className="text-3xl font-black text-slate-900 leading-none">75%</span>
@@ -112,7 +112,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="col-span-1 bg-accent-purple rounded-2xl p-6 text-white flex flex-col justify-between shadow-lg shadow-accent-purple/20">
+                    <div className="col-span-1 rounded-2xl p-6 text-white flex flex-col justify-between shadow-lg bg-purple-500">
                         <div>
                             <h3 className="text-white/70 text-sm font-bold uppercase tracking-widest mb-2">Quick Capture</h3>
                             <p className="text-lg font-bold leading-snug">Got an idea? Save it instantly with voice.</p>
@@ -132,11 +132,11 @@ const Home = () => {
                         <div className="flex items-end justify-between h-24 gap-1">
                             <div className="w-full bg-slate-100 rounded-t-sm h-[40%]"></div>
                             <div className="w-full bg-slate-100 rounded-t-sm h-[60%]"></div>
-                            <div className="w-full bg-primary/40 rounded-t-sm h-[90%]"></div>
-                            <div className="w-full bg-primary rounded-t-sm h-[75%]"></div>
+                            <div className="w-full bg-blue-300 rounded-t-sm h-[90%]"></div>
+                            <div className="w-full bg-blue-500 rounded-t-sm h-[75%]"></div>
                             <div className="w-full bg-slate-100 rounded-t-sm h-[30%]"></div>
                             <div className="w-full bg-slate-100 rounded-t-sm h-[50%]"></div>
-                            <div className="w-full bg-accent-mint rounded-t-sm h-[95%]"></div>
+                            <div className="w-full bg-green-500/90 rounded-t-sm h-[95%]"></div>
                         </div>
                         <div className="flex justify-between mt-3 text-[10px] font-bold text-slate-400 uppercase">
                             <span>Mon</span>
