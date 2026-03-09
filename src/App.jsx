@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Login, Register } from "./forms";
 import { AuthLayout } from "./layouts";
-import { Home } from "./pages";
+import { Home, Focus } from "./pages";
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
 
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/focus" element={<Focus />} />
       </Routes>
     </>
   )
